@@ -24,7 +24,7 @@ email: hello@ilton.one
 description: >- # this means to ignore newlines until "baseurl:"
   Designer com foco em DesignOps e Design System.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lton.one" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ilton.one" # the base hostname & protocol for your site, e.g. http://example.com
 locale: pt_BR
 
 telegram_username: iltonalberto
