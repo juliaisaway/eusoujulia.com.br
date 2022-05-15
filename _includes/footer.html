@@ -1,0 +1,43 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h3>Contato</h3>
+        <ul class="social-media-list">
+            {%- if site.email -%}
+            <li><a target="_blank" class="u-email" href="mailto:{{ site.email }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#email' | relative_url }}"></use></svg> <span class="username">{{ site.email }}</span></a></li>
+            {%- endif -%}
+            {%- if site.telegram_username -%}
+            <li><a target="_blank" class="u-telegram" href="https://telegram.me/{{ site.telegram_username }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#telegram' | relative_url }}"></use></svg> <span class="username">@{{ site.telegram_username }}</span></a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-1">
+        <h3>Redes Sociais</h3>
+        <ul class="social-media-list">
+          {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a target="_blank" href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg> <span class="username">{{ mst.username|escape }}@{{ mst.instance| cgi_escape | escape}}</span></a></li>{%- endif -%}{%- endfor -%}
+          {%- for pxf in site.pixelfed -%}{%- if pxf.username and pxf.instance -%}<li><a target="_blank" href="https://{{ pxf.instance| cgi_escape | escape}}/@{{pxf.username}}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#pixelfed' | relative_url }}"></use></svg> <span class="username">{{ pxf.username|escape }}@{{ pxf.instance| cgi_escape | escape}}</span></a></li>{%- endif -%}{%- endfor -%}
+          {%- if site.twitter_username -%}<li><a target="_blank" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">@{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
+          {%- if site.rss -%}<li><a target="_blank" href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
+        </ul>        
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>Portfolio</h3>
+        <ul class="social-media-list">
+          {%- if site.linkedin_username -%}<li><a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">{{ site.linkedin_username| escape }}</span></a></li>{%- endif -%}
+          {%- if site.dribbble_username -%}<li><a target="_blank" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg> <span class="username">{{ site.dribbble_username| escape }}</span></a></li>{%- endif -%}
+          {%- if site.github_username -%}<li><a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username| escape }}</span></a></li>{%- endif -%}
+        </ul>        
+      </div>
+    </div>
+
+  </div>
+
+</footer>
