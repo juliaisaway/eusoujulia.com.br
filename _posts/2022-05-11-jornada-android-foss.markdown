@@ -28,13 +28,16 @@ Dito isso, passei a mapear os apps que uso e configurei alguns adicionais para m
 ## Apps utilizados
 
 - **F-Droid:**
-O primeiro passo foi baixar o [F-Droid](https://f-droid.org/), a principal loja alternativa do Android. A experiência é estranha e demora pra acostumar, a busca é terrível e as atualizações são diferentes do padrão de mercado. Existem outras lojas alternativas que tentam emular mais a experiência da Play Store, mas gosto de manter o original...
+O primeiro passo foi baixar o [F-Droid](https://f-droid.org/), a principal loja alternativa do Android. A experiência é estranha e demora pra acostumar, a busca é terrível e as atualizações são diferentes do padrão de mercado. Estava difícil usar, até ver os clientes alternativos que, achei bem fracos também, até conhecer o [Droid-ify](https://f-droid.org/pt_BR/packages/com.looker.droidify/), que melhora demais a experiência de usar os repos do F-Droid e outros open source integrados juntos.
 
 - **Controle de Tracking:**
 Primeiro app instalado foi o [TrackerControl](https://f-droid.org/pt_BR/packages/net.kollnig.missioncontrol.fdroid/), um app que monitora todos os apps que estão instalados e mostra quais trackers ele usa, além de permitir bloquear os mesmos. Isso é maravilhoso, pois posso impedir certos apps de acessar trakings de social, de alanytics e outros, sem depender do app permitir que eu faça. Claro, tem app que deixa de funcionar assim, mas é só ir vendo app a app e ir ajustando conforme quer. Considero essencial pra quem quer iniciar nesse mundo da privacidade.
 
 - **Gerenciador de Senhas e Autenticador:**
 Já uso gerenciadores de senhas a tempos. Iniciei em 2018 com o 1Password, porém migrei em 2021 pro [Bitwarden](https://bitwarden.com/), que é Open Source e tem as mesmas funcionalidades. Porém, só recentemente passei a adotar um app dedicado a autenticador de duas etapas, o [Aegis Authenticator](https://f-droid.org/pt_BR/packages/com.beemdevelopment.aegis/). O app é excelente e muito bonito, super fácil de adicionar novos itens, etc. Um dos mais fáceis dessa lista.
+
+- **Localização do Aparelho**
+Para segurança, queria um app de rastreio que não fosse do Google e conheci o [FindMyDevice](https://f-droid.org/pt_BR/packages/de.nulide.findmydevice/). Ele utiliza SMS pra conseguir rastrear e, inicialmente estava bem receoso, porém o app surpreendeu com muitas opções e configurações que tornam o mesmo seguro.
 
 - **Podcasts:**
 Tenho a licença vitalícia do PocketCasts, que comprei lá em 2016 e hoje é algo que nem é possível mais comprar. Sempre achei o PocketCasts a melhor experiência de Podcasts em celulares, a sincronia é excelente e nunca tive o que reclamar. Porém, ele foi comprado diversas vezes, ficou abandonado e hoje está num limbo da Automattic e sinceramente não sei como vai ficar. Com isso, resolvi testar o [AntennaPod](https://f-droid.org/pt_BR/packages/de.danoeh.antennapod/), o mais famoso app FOSS de podcast.
@@ -59,19 +62,25 @@ Convenhamos: É bem difícil sair do Google Maps. Por ter todas as suas ferramen
 Usava o nativo da Samsung que é competente, mas tem aquela filosofia de tentar agrupar em categorias e não te dar a listagem de pastas logo de cara, por isso queria algo diferente, que encontrei no [Material Files](https://f-droid.org/pt_BR/packages/me.zhanghai.android.files/). Ele é super simples e direto ao ponto, mostrando a listagem de pastas e acabou. Porém, ele consegue abrir links FTP e também acessar as pastas root (caso você desbloqueie), além de ser muito bonito.
 
 - **Visualizador de Fotos:**
-Aqui encontrei outro problema, todos da F-Droid são absurdamente feios e nada intuitivos. Pensei em manter o da Samsung mesmo, até conhecer o [Floral](https://github.com/vidit135g/Floral), um app open source que lembra muito a interface do Google Photos. Infelizmente só está disponível na Play Store e seu desenvolvimento parece parado, mas é muito bem feito e cheio de funções legais.
+Aqui encontrei outro problema, todos da F-Droid são absurdamente feios e nada intuitivos. Pensei em manter o da Samsung mesmo, até conhecer o [CameraRollX](https://apt.izzysoft.de/fdroid/index/apk/com.looker.camerarollx), um app open source muito bonito e cheio de configurações. Ele está disponível no repo do IzzyOnDroid, que é facil de ativar no F-Droid ou outro cliente alternativo.
 
 - **Leitor de Mangás:**
 Se não ficou claro ainda, eu sou um completo Otaku. Com isso, leitura de mangás é parte da minha rotina mas ficava preso no desktop apenas, pois sites como MangaDex são terríveis no celular. A um tempo, fui apresentado ao [Tachiyomi](https://tachiyomi.org/), que é um app maravilhoso, integra com diversos sites e idiomas e torna a leitura muito boa. Ele é um leitor de quadrinhos no geral, então você pode adicionar coisas como HQs americanas ou até webcomics como xkcd que irá funcionar numa boa.
 
-- **Telegram:**
-Esse é bem fácil, visto que o Telegram já é open source: Existe uma versão na F-Droid chamada [Telegram FOSS](https://f-droid.org/pt_BR/packages/org.telegram.messenger/), que é basicamente o mesmo app, mas com duas pequenas diferenças: Como não tem APIs do Google, tudo de mapas usa o OpenStreetMaps e ele exibe uma notificação constante, pois sem o Firebase do Google, não daria pra receber push.
+- **Leitor RSS:**
+Tive muita dificuldade com esse ponto, no iOS usei o NetNewsWire que me deixou muito mal acostumado e não encontrava nada equivalente no Android, o mais próximo era o próprio app do Feedly, até conhecer o [ReadYou](https://f-droid.org/pt_BR/packages/com.looker.droidify/), um dos apps mais bonitos dessa lista, super funcional e perfeito para o que eu buscava. Única limitação é que ele está em desenvolvimento, então sua sincronia ainda não funciona, mas o criador promete em breve.
 
-- **Twitter:**
-Acho a experiência do Twitter for Android horrível, porém todos os clientes tem limitações nas suas APIs e não funcionam bem e praticamente ninguem migrou pra Api 2.0 do Twitter. Mas pra minha surpresa, o [Twidere X](https://f-droid.org/pt_BR/packages/com.twidere.twiderex/) utiliza a nova API já, é lindo e open source, porém com uma pegadinha: eles não tem a Chave de API, você tem que gerar uma. Então é chatinho configurar de cara, precisa criar conta no Twitter for Developers e registrar uma aplicação, mas no geral funciona muito bem.
+- **Tracking de Leitura:**
+Nunca tinha achado um app legal pra identificar e cadastrar os livros que tenho/já li, porém achei por acaso o [OpenReads](https://f-droid.org/pt_BR/packages/software.mdev.bookstracker/) que achei incrível. Consegui cadastrar cerca de 90% dos livros que tenho (infelizmente alguns muito novos em português, ele não conseguiu achar). Além disso, conta com uma ótima interface.
 
 - **Player de Música/Audio:**
 Embora eu assine o Tidal para ouvir músicas via streaming, muitas vezes preciso utilizar MP3 local, especialmente para as trilhas de RPG que mestro. Pra isso, fui direto num clássico, o [VLC](https://f-droid.org/pt_BR/packages/org.videolan.vlc/). Ele é incrível no Android, organiza tudo bonitinho e funciona do jeito que quero. Testei outros players, mas sempre volto pro VLC.
+
+- **Telegram:**
+Tecnicamente o Telegram não é FOSS por padrão, mas existe uma versão do mesmo na F-Droid com uma conversão open source, porém resolvi ir pra um app alternativo e estou usando o [Nekogram X](https://github.com/NekoX-Dev/NekoX), um cliente que adiciona algumas funcionalidades extras, porém mantendo a essência do mesmo. Tem apenas algumas diferenças da versão FOSS pra versão da Play Store: Como não tem APIs do Google, tudo de mapas usa o OpenStreetMaps e ele exibe uma notificação constante, pois sem o Firebase do Google, não daria pra receber push.
+
+- **Twitter:**
+Acho a experiência do Twitter for Android horrível, porém todos os clientes tem limitações nas suas APIs e não funcionam bem e praticamente ninguem migrou pra Api 2.0 do Twitter. Mas pra minha surpresa, o [Twidere X](https://f-droid.org/pt_BR/packages/com.twidere.twiderex/) utiliza a nova API já, é lindo e open source, porém com uma pegadinha: eles não tem a Chave de API, você tem que gerar uma. Então é chatinho configurar de cara, precisa criar conta no Twitter for Developers e registrar uma aplicação, mas no geral funciona muito bem.
 
 - **Fediverso (Mastodon/Pixelfed):**
 Sou um entusiasta do Fediverso, então claro que eu ia ter apps pra eles. Pro [Mastodon](https://f-droid.org/pt_BR/packages/com.keylesspalace.tusky/), uso o clássico Tusky, que é lindo e super funcional. Saiu recentemente o cliente oficial de Mastodon pra Android, mas não gostei da experiência dele. Para o Pixelfed, a única opção no momento é o [PixelDroid](https://f-droid.org/pt_BR/packages/org.pixeldroid.app/), que é um app horrível de feio e com usabilidade péssima. Mas não tem nenhuma outra alternativa no momento. E hey, funciona..
