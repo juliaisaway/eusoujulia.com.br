@@ -48,6 +48,7 @@ work:
     site: https://warren.com.br
     data:
       - inicio: setembro de 2020
+      - fim: agosto de 2022
     desc: 
       - Responsável pela área de DesignOps da empresa, organizando os Processos e Ferramentas do time para dar maior autonomia aos designers, junto de um time multidisciplinar de Ops e curador do Nebraska, o Design System da Warren.
   - name: Cielo
