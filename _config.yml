@@ -36,7 +36,7 @@ dribbble_username: iltonjr
 
 mastodon:
   - username: ilton
-    instance: masto.donte
+    instance: masto.donte.com.br
 
 pixelfed:
   - username: ilton
