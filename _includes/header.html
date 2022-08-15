@@ -23,11 +23,12 @@
         <div class="trigger">
           <a class="{%- if url == "/" -%}page-link active{%- else -%}page-link{%- endif -%}" rel="author" href="{{ "/" | relative_url }}">Home</a>
           {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="{%- if url == my_page.url -%}page-link active{%- else -%}page-link{%- endif -%}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
+              {%- assign my_page = site.pages | where: "path", path | first -%}
+              {%- if my_page.title -%}
+                <a class="{%- if url == my_page.url -%}page-link active{%- else -%}page-link{%- endif -%}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endif -%}
           {%- endfor -%}
+
         </div>
       </nav>
     {%- endif -%}
