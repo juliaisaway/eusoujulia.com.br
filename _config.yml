@@ -28,7 +28,6 @@ url: "https://ilton.one" # the base hostname & protocol for your site, e.g. http
 locale: pt_BR
 
 telegram_username: iltonalberto
-twitter_username: iltonalberto
 pixelfed_username: ilton
 linkedin_username: iltonjr
 
