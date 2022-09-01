@@ -43,6 +43,12 @@ pixelfed:
     instance: pixelfed.social
 
 work:
+  - name: meutudo
+    site: https://meutudo.com.br
+    data:
+      - inicio: setembro de 2022
+    desc: 
+      - Responsável pelo Design System da empresa, organizando a arquitetura e processos de implementação de novos tokens, componentes e ferramentas de auxílio a UI da empresa.
   - name: Warren
     site: https://warren.com.br
     data:
