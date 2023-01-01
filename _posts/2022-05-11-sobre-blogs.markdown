@@ -16,9 +16,7 @@ Tentei usar o Medium no passado, *a rede social moderninha*, porém nunca fui f�
 
 ## Develop
 
-Com isso, pensei em montar algo novo, mas queria gastar relativamente pouco. Uma das coisas que fiz recentemente foi registrar meu novo domínio: **ilton.one** (que você está vendo nesse momento). Aproveitei também para colocar um e-mail dedicado, na qual usei o **Fastmail**, um serviço de e-mail pago, porém com foco em privacidade e altamente configurável.
-
-> Você pode inclusive conseguir 10% na assinatura do Fastmail utilizando [meu cupom de desconto](https://ref.fm/u28223357).
+Com isso, pensei em montar algo novo, mas queria gastar relativamente pouco. Uma das coisas que fiz recentemente foi registrar meu novo domínio: **ilton.one** (que você está vendo nesse momento). Aproveitei também para colocar um e-mail dedicado, na qual usei o **Proton Mail**, um serviço de e-mail pago, porém com foco em privacidade e altamente configurável.
 
 Quanto ao site, eu possuía uma página estática, feita em HTML por mim mesmo, hospedado no GitHub Pages. É uma excelente hospedagem, porém totalmente estática, então um CMS como WordPress estava totalmente fora de cogitação. Então voltei minha atenção aos CMS estáticos e o primeiro que veio a cabeça foi o Jekyll.
 
