@@ -38,4 +38,10 @@
 </symbol>
 
 
+<symbol id="bluesky" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+  <path d="M0 3C0 1.34315 1.34315 0 3 0H13C14.6569 0 16 1.34315 16 3V13C16 14.6569 14.6569 16 13 16H3C1.34315 16 0 14.6569 0 13V3Z"/>
+</symbol>
+
+
+
 </svg>
