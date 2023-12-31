@@ -1,0 +1,25 @@
+$FontPath: "./fonts" !default;
+$FontName: "Roboto" !default;
+$FontVersion: "1.1.0" !default;
+
+:root {
+    --background: #fff;
+    --links:#1970F2;
+    --links-bg: #D5E4F9;
+    --title-color: #333;
+    --paragraph-color: #666;
+    --border-color: #666;
+    --alert: #784D0B;
+    --alert-bg: #FBD1A3;
+}
+
+[data-theme="dark"] {
+    --background: #333;
+    --links:#66A0F9;
+    --links-bg: #C8DBF8;
+    --title-color: #fff;
+    --border-color: #fff;
+    --paragraph-color: #fff;
+    --alert: #FBD1A3;
+    --alert-bg: #815512;
+}
