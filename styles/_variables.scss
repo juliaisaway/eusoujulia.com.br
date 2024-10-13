@@ -11,6 +11,10 @@ $FontVersion: "1.1.0" !default;
     --border-color: #666;
     --alert: #784D0B;
     --alert-bg: #FBD1A3;
+    --trans-blue: #5bcffa;
+    --trans-pink: #f5abb9;
+    --trans-white: #ffffff;
+    --box-shadow: rgba(100, 100, 111, 0.2);
 }
 
 [data-theme="dark"] {
@@ -22,4 +26,8 @@ $FontVersion: "1.1.0" !default;
     --paragraph-color: #fff;
     --alert: #FBD1A3;
     --alert-bg: #815512;
+    --trans-blue: #5bcffa;
+    --trans-pink: #f5abb9;
+    --trans-white: #ffffff;
+    --box-shadow: rgba(100, 100, 111, 0.2);
 }
