@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <title>Hello, I'm Júlia</title>
 
@@ -29,13 +29,6 @@
         <div class="stripes white"></div>
         <div class="stripes pink"></div>
         <div class="stripes blue"></div>
-    </div>
-
-    <div class="chrome-alert" id="chrome">
-        <div class="block">
-        <p>Google Chrome é uma ameaça real a sua privacidade e a Internet Livre.</p>
-        <a class="btn" href="https://contrachrome.com/" target="_blank" aria-label="Motivos na qual você deveria parar de usar Google Chrome">Saiba mais</a>
-        </div>
     </div>
 
     <div class="content">
@@ -133,32 +126,6 @@
 
             toggleSwitch.addEventListener('change', switchTheme, false);
 
-             /* Exibindo o alerta do Google Chrome */
-            
-            var isChromium = window.chrome;
-            var winNav = window.navigator;
-            var vendorName = winNav.vendor;
-            var isOpera = typeof window.opr !== "undefined";
-            var isIEedge = winNav.userAgent.indexOf("Edg") > -1;
-            var isIOSChrome = winNav.userAgent.match("CriOS");
-
-            if (isIOSChrome) {
-            // is Google Chrome on IOS
-            } else if(
-            isChromium !== null &&
-            typeof isChromium !== "undefined" &&
-            vendorName === "Google Inc." &&
-            isOpera === false &&
-            isIEedge === false
-            ) {
-            // is Google Chrome
-                console.log("Você está usando o Google Chrome ou derivados. Considere utilizar um navegador livre, como o Mozilla Firefox");
-                document.querySelector("#chrome").style.display = "block";
-            } else { 
-            // not Google Chrome 
-                console.log("Parabéns, você não está usando o Google Chrome");
-                document.querySelector("#chrome").style.display = "none";
-            }
         </script>
     </div>
 
