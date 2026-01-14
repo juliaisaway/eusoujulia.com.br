@@ -1,133 +1,315 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <title>Hello, I'm Júlia</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Júlia Alberto">
-    <meta keywords="júlia, júlia alberto, designer, design ops, design system, ux, ui, web, acessibilidade, a11y">
-    <meta description="Júlia Alberto, Designer com foco em Design Ops, Design System e Acessibilidade.">
+    <title>Júlia Alberto — Design Ops, Design System & Acessibilidade</title>
 
-    <meta property="og:description" content="Júlia Alberto, Designer com foco em Design Ops, Design System e Acessibilidade.">
-    <meta property="og:image" content="images/shareable.png">
-    <meta property="og:site_name" content="Júlia Alberto, Designer com foco em Design Ops, Design System e Acessibilidade.">
-    <meta property="og:title" content="Júlia Alberto, Designer com foco em Design Ops, Design System e Acessibilidade.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.eusoujulia.com.br/">
+    <meta name="author" content="Júlia Alberto" />
+    <meta
+      name="description"
+      content="Júlia Alberto, Designer com foco em Design Ops, Design System e Acessibilidade."
+    />
+    <meta
+      name="keywords"
+      content="design ops, design system, acessibilidade, ux, ui"
+    />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Júlia Alberto — Design Ops & Acessibilidade"
+    />
+    <meta
+      property="og:description"
+      content="Designer com foco em Design Ops, Design System e Acessibilidade."
+    />
+    <meta property="og:image" content="images/shareable.png" />
+    <meta property="og:url" content="https://www.eusoujulia.com.br/" />
 
+    <link rel="canonical" href="https://www.eusoujulia.com.br/" />
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
+    />
 
-</head>
-<body>
-    <div class="trans-flag">
-        <div class="stripes blue"></div>
-        <div class="stripes pink"></div>
-        <div class="stripes white"></div>
-        <div class="stripes pink"></div>
-        <div class="stripes blue"></div>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/data-lang.js" defer></script>
+    <script src="scripts/theme-toggle.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="trans-flag" aria-hidden="true">
+      <div class="stripes blue"></div>
+      <div class="stripes pink"></div>
+      <div class="stripes white"></div>
+      <div class="stripes pink"></div>
+      <div class="stripes blue"></div>
     </div>
 
-    <div class="content">
+    <main class="content">
+      <section id="top" class="container">
+        <div class="switchers">
+          <theme-toggle label="Alternar tema"></theme-toggle>
 
-        <div id="top" class="container">
-
-            <div class="col switchers">
-                <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div>
-            </div>
-
-            <div class="col">
-                <header>
-                    <h1>👋 Hello, I'm <span>Júlia</span>.</h1>
-                    <p>🏳️‍⚧️ Profissional de Design Ops e especialista em Design System, procurando sempre construir melhores ferramentas para seres humanos.</p>
-                    <p>Atualmente trabalhando na <a href="https://vivo.com.br/" target="_blank" aria-label="5G, Ultra Banda Larga, HDTV e mais">@Vivo</a></p>
-                </header>
-            </div>
-
+          <nav class="language-switcher" aria-label="Seletor de idioma">
+            <button type="button" id="language-toggle" aria-live="polite">
+              EN
+            </button>
+          </nav>
         </div>
 
-        <div id="content" class="container profile">
+        <header data-lang="pt-BR" lang="pt-BR">
+          <h1>👋 Olá, eu me chamo <span>Júlia</span>.</h1>
+          <p>
+            🏳️‍⚧️ Profissional de Design Ops e especialista em Acessibilidade,
+            procurando sempre construir melhores ferramentas para seres humanos.
+          </p>
+          <p>
+            Atualmente trabalhando na
+            <a
+              href="https://vivo.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @Vivo
+            </a>
+            e fundadora da
+            <a
+              href="https://pixeldawn.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @Pixel Dawn Collective
+            </a>
+          </p>
+        </header>
 
-            <div class="col">
-                <section id="who">
-                    <h2>Who am I?</h2>
-                    <p>Minha trajetória profissional inclui passagens por diversas agências de publicidade, desempenhando papéis variados desde Diretora de Arte até desenvolvedora Front-End. Ao longo do tempo, aprofundei meus estudos em <b>experiência do usuário</b>, interações e na arte de construir interfaces que atendam às necessidades de todos os usuários.</p>
+        <header data-lang="en" lang="en" hidden>
+          <h1>👋 Hello, I'm <span>Júlia</span>.</h1>
+          <p>
+            🏳️‍⚧️ Design Ops professional and Design System specialist, always
+            striving to build better tools for human beings.
+          </p>
+          <p>
+            Currently working at
+            <a
+              href="https://vivo.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @Vivo
+            </a>
+            and founder of
+            <a
+              href="https://pixeldawn.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @Pixel Dawn Collective
+            </a>
+          </p>
+        </header>
+      </section>
 
-                    <p>Unindo minha experiência em desenvolvimento aos conceitos fundamentais de UX, aprimorei minhas habilidades em componentização, padronizações e adentrei no universo do <b>Design System</b>. Além disso, dediquei-me ao estudo aprofundado de <b>acessibilidade</b>, buscando tornar toda interface mais inclusiva tanto no lado de design quanto de desenvolvimento.</p>
+      <section id="profile" class="container profile">
+        <section id="who" data-lang="pt-BR" lang="pt-BR">
+          <h2>Who am I?</h2>
 
-                    <p>Além disso, sou uma <i>mulher transgênero</i>, utilizo os pronomes <b>ela/dela</b> e tenho muito orgulho de poder carregar minha bandeira e atuar pela maior diversidade dentro do mundo de produto e design.</p>
-                </section>
-            </div>
+          <p>
+            Minha trajetória profissional inclui passagens por diversas agências
+            de publicidade, desempenhando papéis variados desde Diretora de Arte
+            até desenvolvedora Front-End. Ao longo do tempo, aprofundei meus
+            estudos em <b>experiência do usuário</b>, interações e na arte de
+            construir interfaces que atendam às necessidades de todos os
+            usuários.
+          </p>
 
-            <div class="col">
-                <img src="images/mypersona.jpg" alt="Foto minha, olhando de perfil. Sou uma mulher branca, de cabelo comprido vermelho. Estou com um óculos de armação preta, um batom vermelho, um colar de lua branco e uma blusinha preta. Mostra parcialmente meu braço direito tatuado com diversas tatuagens.">
-            </div>
+          <p>
+            Unindo minha experiência em desenvolvimento aos conceitos
+            fundamentais de UX, aprimorei minhas habilidades em componentização,
+            padronizações e adentrei no universo do
+            <b>Design System</b>. Além disso, dediquei-me ao estudo aprofundado
+            de <b>acessibilidade</b>, buscando tornar toda interface mais
+            inclusiva tanto no lado de design quanto de desenvolvimento..
+          </p>
 
-        </div>
+          <p>
+            Além disso, sou uma <i>mulher transgênero</i>, utilizo os pronomes
+            <b>ela/dela</b> e tenho muito orgulho de poder carregar minha
+            bandeira e atuar pela maior diversidade dentro do mundo de produto e
+            design.
+          </p>
+        </section>
 
-        <div class="container">
+        <section data-lang="en" lang="en" hidden>
+          <h2>Who am I?</h2>
 
-            <div class="col">
-                <section id="how">
-                    <h2>What do I do?</h2>
+          <p>
+            My professional journey includes working at several advertising
+            agencies, taking on roles ranging from Art Director to Front-End
+            Developer. Over time, I deepened my studies in
+            <b>user experience</b>, interactions, and the art of building
+            interfaces that meet the needs of all users.
+          </p>
 
-                    <p>Sou especializada no uso de ferramentas de prototipação e UX, sendo minha principal o <b>Figma</b>. Tenho um vasto conhecimento de Design Tokens e <b>Atomic Design</b>, auxiliando sempre os times de Design a avançar no quesito de boas práticas de UI e componentização. Tudo isso, acompanhado do uso de <b>metodologias ágeis</b>.</p>
+          <p>
+            By combining my development experience with fundamental UX concepts,
+            I refined my skills in componentization, standardization, and
+            entered the world of <b>Design Systems</b>. Additionally, I
+            dedicated myself to in-depth studies of <b>accessibility</b>, aiming
+            to make every interface more inclusive from both design and
+            development perspectives.
+          </p>
 
-                    <p>Minha experiência abrange desde a <b>arquitetura de componentes</b> e engenharia no Figma até a integração desses elementos ao desenvolvimento, utilizando uma linguagem unificada entre diversas plataformas. Essa habilidade facilita os refinamentos necessários entre as fases de design e desenvolvimento. Durante meu percurso no desenvolvimento, atuei como <b>Desenvolvedora Front-End</b>, aprofundando-me especialmente em CSS e na criação de componentes, explorando diversos frameworks.</p>
+          <p>
+            I am also a <i>transgender woman</i>, use the pronouns
+            <b>she/her</b>, and take great pride in carrying my flag and
+            advocating for greater diversity within the product and design
+            industry.
+          </p>
+        </section>
 
-                    <p>Em Acessibilidade, auxiliei na criação de <b>tematizações e estilizações</b> para pessoas daltônicas, temas de alto contraste e dislexia, além de auxiliar no desenvolvimento para permitir o acesso das aplicações navegável via <b>leitores de tela</b>. Tudo isso sempre testando com usuários.</p>
+        <section id="picture" data-lang="pt-BR" lang="pt-BR">
+          <img
+            src="images/mypersona.jpg"
+            loading="lazy"
+            alt="Foto minha, olhando de perfil. Sou uma mulher branca, de cabelo comprido vermelho, usando óculos de armação preta e batom vermelho."
+          />
+        </section>
+        <section id="picture" data-lang="en" lang="en" hidden>
+          <img
+            src="images/mypersona.jpg"
+            loading="lazy"
+            alt="A photo of me, shown in profile. I am a white woman with long red hair, wearing black-framed glasses and red lipstick."
+          />
+        </section>
+      </section>
 
-                    <p>Hoje atuo como Lead dos times de Acessibilidade e System Ops B2B da Vivo, sendo responsável pela gestão do time, planejamento e backlog do time.</p>
-                </section>
-            </div>
+      <section id="work" class="container">
+        <article id="how" data-lang="pt-BR" lang="pt-BR">
+          <h2>What do I do?</h2>
 
-            <div class="col">
-                <section id="where">
-                    <h2>Wanna get in touch?</h2>
+          <p>
+            Sou especializada no uso de ferramentas de prototipação e UX, sendo
+            minha principal o <b>Figma</b>. Tenho um vasto conhecimento de
+            Design Tokens e <b>Atomic Design</b>, auxiliando sempre os times de
+            Design a avançar no quesito de boas práticas de UI e
+            componentização. Tudo isso, acompanhado do uso de
+            <b>metodologias ágeis</b>.
+          </p>
 
-                    <p>Além deste site, você pode me contactar <a href="mailto:hello@eusoujulia.com.br" target="_blank" aria-label="Mande um email e podemos conversar melhor" >enviando um E-mail</a> ou entrando em contato via <a href="http://telegram.me/juliaisaway" target="_blank" aria-label="Minha principal maneira de conversa rápida">Telegram</a>. Nas redes sociais, estou no <a href="https://www.instagram.com/juliaisaway_" target="_blank" aria-label="Posto algumas fotinhas e muitos stories">Instagram</a> e no <a href="https://bsky.app/profile/eusoujulia.com.br" target="_blank" aria-label="Local onde posto pensamentos e outras bobagens">Bluesky</a>. Caso queira ver mais, acesse meu <a href="https://www.linkedin.com/in/juliaisaway" target="_blank" aria-label="Rede social corporativa">Linkedin</a>, no <a href="https://dribbble.com/juliaisaway" target="_blank" aria-label="Rede social de snippets de Design">Dribble</a> e no no <a href="https://github.com/juliaisaway" target="_blank" aria-label="Maior repositório de código do mundo">GitHub</a>.</p>
-                </section>
-            </div>
+          <p>
+            Minha experiência abrange desde a
+            <b>arquitetura de componentes</b> e engenharia no Figma até a
+            integração desses elementos ao desenvolvimento, utilizando uma
+            linguagem unificada entre diversas plataformas. Essa habilidade
+            facilita os refinamentos necessários entre as fases de design e
+            desenvolvimento. Durante meu percurso no desenvolvimento, atuei como
+            Desenvolvedora Front-End, aprofundando-me especialmente em CSS e na
+            criação de componentes, explorando diversos frameworks.
+          </p>
 
-        </div>
-        
-        <script>
+          <p>
+            Em Acessibilidade, auxiliei na criação de
+            <b>tematizações e estilizações</b> para pessoas daltônicas, temas de
+            alto contraste e dislexia, além de auxiliar no desenvolvimento para
+            permitir o acesso das aplicações navegável via
+            <b>leitores de tela</b>. Tudo isso sempre testando com usuários.
+          </p>
 
-            /* Mudando o Modo para Dark ou Light */
+          <p>
+            Hoje atuo como Lead do time de Acessibilidade da Vivo, sendo
+            responsável pela gestão do time, planejamento e backlog do time.
+          </p>
+        </article>
 
-            const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-            const currentTheme = localStorage.getItem('theme');
+        <article data-lang="en" lang="en" hidden>
+          <h2>What do I do?</h2>
 
-            if (currentTheme) {
-                document.documentElement.setAttribute('data-theme', currentTheme);
-            
-                if (currentTheme === 'dark') {
-                    toggleSwitch.checked = true;
-                }
-            }
+          <p>
+            I specialize in the use of UX and prototyping tools, with
+            <b>Figma</b> as my primary platform. I have extensive knowledge of
+            Design Tokens and <b>Atomic Design</b>, consistently helping design
+            teams advance their UI best practices and componentization, all
+            supported by <b>agile methodologies</b>.
+          </p>
 
-            function switchTheme(e) {
-                if (e.target.checked) {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                }
-                else {        document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                }    
-            }
+          <p>
+            My experience spans from <b>component architecture</b> and Figma
+            engineering to integrating those elements into development, using a
+            unified language across multiple platforms. This skill facilitates
+            refinement between design and development phases. Throughout my
+            development journey, I worked as a Front-End Developer, focusing
+            especially on CSS and component creation across various frameworks.
+          </p>
 
-            toggleSwitch.addEventListener('change', switchTheme, false);
+          <p>
+            In Accessibility, I supported the creation of
+            <b>theming and styling</b> for color-blind users, high-contrast
+            themes, and dyslexia, as well as assisting in development to enable
+            applications to be navigable via <b>screen readers</b>. All of this
+            was always tested with users.
+          </p>
 
-        </script>
-    </div>
+          <p>
+            Today, I work as Accessibility Team Lead at Vivo, responsible for
+            team management, planning, and backlog organization.
+          </p>
+        </article>
+      </section>
 
-</body>
+      <section id="contact" class="container">
+        <article id="where" data-lang="pt-BR" lang="pt-BR">
+          <h2>Wanna get in touch?</h2>
+
+          <p>
+            Além deste site, você pode me contactar
+            <a href="mailto:hello@eusoujulia.com.br">enviando um e-mail</a>, ou
+            entrando em contato via
+            <a href="http://telegram.me/juliaisaway">Telegram</a>. Nas redes
+            sociais, estou no
+            <a href="https://www.instagram.com/juliaisaway_">Instagram</a>
+            e no
+            <a href="https://bsky.app/profile/eusoujulia.com.br">Bluesky</a>.
+            Caso queira ver mais, acesse meu
+            <a href="https://www.linkedin.com/in/juliaisaway">LinkedIn</a>, meu
+            <a href="https://dribbble.com/juliaisaway">Dribbble</a>
+            e o meu
+            <a href="https://github.com/juliaisaway">GitHub</a>.
+          </p>
+        </article>
+
+        <article data-lang="en" lang="en" hidden>
+          <h2>Wanna get in touch?</h2>
+
+          <p>
+            In addition to this website, you can contact me by
+            <a href="mailto:hello@eusoujulia.com.br">sending an email</a>, or by
+            reaching out via
+            <a href="http://telegram.me/juliaisaway">Telegram</a>. On social
+            media, you can find me on
+            <a href="https://www.instagram.com/juliaisaway_">Instagram</a>
+            and
+            <a href="https://bsky.app/profile/eusoujulia.com.br">Bluesky</a>. If
+            you'd like to see more, visit my
+            <a href="https://www.linkedin.com/in/juliaisaway">LinkedIn</a>, my
+            <a href="https://dribbble.com/juliaisaway">Dribbble</a>, and my
+            <a href="https://github.com/juliaisaway">GitHub</a>.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
