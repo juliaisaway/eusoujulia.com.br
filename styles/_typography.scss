@@ -20,7 +20,8 @@ h2 {
 h1 {
   font-size: 32px;
 
-  span {
+  span,
+  b {
     font-weight: bold;
     color: var(--color-accent);
   }

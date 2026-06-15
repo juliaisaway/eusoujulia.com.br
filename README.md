@@ -3,6 +3,7 @@
 Site pessoal de **Júlia Alberto**, com foco em **Design Ops**, **Design Systems** e **Acessibilidade**.
 
 Este projeto foi pensado para ser:
+
 - simples
 - sem dependências desnecessárias
 - semanticamente correto
@@ -28,7 +29,6 @@ Sem frameworks, sem build complexo, sem overengineering.
 - **HTML5 semântico**
 - **SCSS** (organizado por responsabilidade)
 - **JavaScript vanilla**
-- **Web Components** (onde faz sentido)
 - Nenhum framework
 - Nenhuma lib de i18n
 - Nenhum bundler
